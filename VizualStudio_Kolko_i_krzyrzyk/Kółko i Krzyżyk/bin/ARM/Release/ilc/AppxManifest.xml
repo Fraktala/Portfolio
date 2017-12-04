@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp build" xmlns:build="http://schemas.microsoft.com/developer/appx/2015/build">
+  <!--
+    PLIK MANIFESTU TEGO PROJEKTU JEST GENEROWANY PRZEZ PROCES KOMPILACJI.
+
+    Zmiany w pliku zostaną utracone podczas ponownego tworzenia pliku. W celu poprawy błędów należy edytować plik źródłowy .appxmanifest.
+
+    Po więcej informacji o plikach manifestu pakietów, zobacz http://go.microsoft.com/fwlink/?LinkID=241727
+  -->
+  <Identity Name="eff25458-ac0a-43be-ba8b-6254817db7b8" Publisher="CN=Antur" Version="1.0.0.0" ProcessorArchitecture="arm" />
+  <mp:PhoneIdentity PhoneProductId="eff25458-ac0a-43be-ba8b-6254817db7b8" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Properties>
+    <DisplayName>Kółko i Krzyżyk</DisplayName>
+    <PublisherDisplayName>Antur</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10586.0" MaxVersionTested="10.0.14393.0" />
+    <PackageDependency Name="Microsoft.VCLibs.140.00" MinVersion="14.0.22929.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+    <PackageDependency Name="Microsoft.NET.Native.Framework.1.3" MinVersion="1.3.24201.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+    <PackageDependency Name="Microsoft.NET.Native.Runtime.1.4" MinVersion="1.4.24201.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+  </Dependencies>
+  <Resources>
+    <Resource Language="PL-PL" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="Kółko i Krzyżyk.exe" EntryPoint="Kółko_i_Krzyżyk.App">
+      <uap:VisualElements DisplayName="Kółko i Krzyżyk" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="Kółko i Krzyżyk" BackgroundColor="transparent">
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png">
+        </uap:DefaultTile>
+        <uap:SplashScreen Image="Assets\SplashScreen.png" />
+        <uap:InitialRotationPreference>
+          <uap:Rotation Preference="landscape" />
+          <uap:Rotation Preference="landscapeFlipped" />
+        </uap:InitialRotationPreference>
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+  <build:Metadata>
+    <build:Item Name="TargetFrameworkMoniker" Value=".NETCore,Version=v5.0" />
+    <build:Item Name="VisualStudio" Version="15.0" />
+    <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Community 2017" />
+    <build:Item Name="OperatingSystem" Version="10.0.15063.0 (WinBuild.160101.0800)" />
+    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="15.0.26419.1" />
+    <build:Item Name="ProjectGUID" Value="{91A442B1-7F76-4601-A4BC-22E6C66D361C}" />
+    <build:Item Name="ilc.exe" Version="1.4.24211.00 built by: PROJECTNGDR2" />
+    <build:Item Name="OptimizingToolset" Value="ilc.exe" />
+    <build:Item Name="UseDotNetNativeSharedAssemblyFrameworkPackage" Value="True" />
+    <build:Item Name="UniversalGenericsOptOut" Value="false" />
+    <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="15.0.26419.1" />
+    <build:Item Name="WindowsMobile" Version="10.0.14393.0" />
+    <build:Item Name="MakePri.exe" Version="10.0.14393.795 (rs1_release_sec.170105-1850)" />
+  </build:Metadata>
+</Package>
