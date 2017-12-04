@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 ## Henryk Zulinski semestr 4
-## Brak klass-> w na potrzeby projektu nie byl‚y potrzebne
+## Brak klass-> w na potrzeby projektu nie bylâ€šy potrzebne
 """
 Projekt mial na celu utworzenie maszyny ktora ma wykryc czlowieka
 w zaleznosci od jego doleglosci od kamery nie robic nic
@@ -77,12 +77,12 @@ def SendMail(ImgFileName):
     image = MIMEImage(img_data, name=os.path.basename(ImgFileName))
     msg.attach(image)
 
-    s = smtplib.SMTP('smtp.mail.yahoo.com', 587)
+    s = smtplib.SMTP('smtp.mail.DOMENA', 587)
     s.ehlo()
     s.starttls()
     s.ehlo()
-    s.login('projekt_raspbery@yahoo.com', 'Rasbian999')
-    s.sendmail('projekt_raspbery@yahoo.com', 'henryk.zulinski@smcebi.edu.pl', msg.as_string())
+    s.login('FromEmail', 'Password')
+    s.sendmail('FromEmail', 'ToEmail', msg.as_string())
     s.quit()
 
 def SMS():
@@ -90,8 +90,8 @@ def SMS():
     accountSid = 'ACc76646d28512528d7642775fb04a2531'
     authToken = '390158f148f3f417de97f47ca899930a'
     twilioClient = TwilioRestClient(accountSid, authToken)
-    myTwilioNumber = '+48732484017'
-    destCellPhone = '+48660391391'
+    myTwilioNumber = 'Numer Usuniety'
+    destCellPhone = 'Numer Usuniety'
     myMessage = twilioClient.messages.create(body = "SMS zostal wyslany", from_=myTwilioNumber, to=destCellPhone)
 
 flag=[0,0,0]
@@ -143,7 +143,7 @@ def draw_rects(img, rects, color):
                 internet= internet_on()
                 if internet== True:
                     SendMail('Intruder.jpg')
-                    #SMS() ##Funkcja zostaa przetestowana- zadziala lecz w zwizku z palatnoscia uslugi konto zostalo usuniete i nie bedzie prezentowane
+                    #SMS() ##Funkcja zostala przetestowana- zadziala lecz w zwizku z palatnoscia uslugi konto zostalo usuniete i nie bedzie prezentowane
 
         cv2.rectangle(img, (x1, y1), (x2, y2), color, 2)
         
