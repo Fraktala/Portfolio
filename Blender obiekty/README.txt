@@ -1,0 +1,1 @@
+Obiekty utworzone przeze mnie w Blenderze
