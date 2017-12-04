@@ -1,0 +1,1 @@
+Gra w kó³ko i krzyrzyk utworzona na potrzeby zajêæ z "programowania urz¹dzeñ mobilnych"
