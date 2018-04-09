@@ -1,0 +1,6 @@
+Jest to gra bazuj¹ca na zasadach familiady.
+Plik py jest kodem gry natomiast w pliku familiada.txt zawarte s¹ pytania które zgodnie z swoj¹ wol¹ mo¿na dowolnie modyfikowaæ zachowuj¹c przy tym odpowiedni wzór.
+
+Przed ka¿dym pyteniem oraz po ka¿dym pytaniu musi byæ jedna linijka przerwy.
+Nastêpnie pytania zaczynaj¹ siê od liczby, zanku "." oraz przerwy. Pytania s¹ pisane wielkimi literami.
+Znaki charakterystyczne dla danego jêzyka generuj¹ b³êdy, proszê ich nie stosowaæ.
